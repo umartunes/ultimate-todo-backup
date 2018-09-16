@@ -1,0 +1,27 @@
+{
+  "name": "ultimate-todo-list",
+  "version": "1.0.0",
+  "description": "The Ultimate TODO list application",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run nodemon\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "cd client && npm start",
+    "nodemon": "nodemon server/server.js --watch server --delay 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Umar Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.2.14",
+    "passport": "^0.4.0",
+    "passport-facebook-token": "^3.3.0",
+    "passport-local": "^1.0.0"
+  }
+}
