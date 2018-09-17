@@ -5,7 +5,7 @@ import FacebookLogin from 'react-facebook-login';
 
 import { facebookLogin } from '../redux/actions/actions-auth'
 import Spinner from './widgets/Spinner'
-import shakeHands from '../images/shake.svg'
+import todoIcon from '../images/todos.svg'
 
 class Login extends Component {
 
@@ -57,7 +57,7 @@ class Login extends Component {
                                 <div className="col s12 white-text flexBox flexColumn">
                                     <h3 className="center-align margin0">The Ultimate Todo</h3>
                                     <div className="center-align marginTop marginBottom">
-                                        <img src={shakeHands} alt="Shake" style={{ width: '100%', maxWidth: 250 }} />
+                                        <img src={todoIcon} alt="Shake" style={{ width: '100%', maxWidth: 250 }} />
                                     </div>
                                     <div className="loginButtons flex">
                                         {

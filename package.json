@@ -5,9 +5,11 @@
   "main": "server/server.js",
   "scripts": {
     "start": "concurrently \"npm run nodemon\" \"npm run client\"",
-    "server": "node server/server.js",
     "client": "cd client && npm start",
-    "nodemon": "nodemon server/server.js --watch server --delay 1",
+    "server": "node server/server.js",
+    "dev": "ts-node ./lib/server.ts",
+    "tsc": "tsc",
+    "nodemon": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Muhammad Umar Ahmad",
@@ -22,6 +24,19 @@
     "mongoose": "^5.2.14",
     "passport": "^0.4.0",
     "passport-facebook-token": "^3.3.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/connect-mongo": "0.0.39",
+    "@types/cors": "^2.8.4",
+    "@types/express-session": "^1.15.11",
+    "@types/mongodb": "^3.1.7",
+    "@types/mongoose": "^5.2.13",
+    "@types/node": "^10.9.4",
+    "@types/passport": "^0.4.6",
+    "@types/passport-facebook-token": "^0.4.33",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   }
 }

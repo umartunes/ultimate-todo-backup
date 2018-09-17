@@ -25,9 +25,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run workbox",
+    "build": "react-scripts build && npm run workbox && npm run copy-build",
     "test": "react-scripts test --env=jsdom",
     "workbox": "workbox generateSW workbox-config.js",
+    "copy-build": "cpy --parents build ../",
     "ssldev": "set HTTPS=true&&npm start"
+  },
+  "devDependencies": {
+    "cpy-cli": "^2.0.0",
+    "move-cli": "^1.2.0"
   }
 }

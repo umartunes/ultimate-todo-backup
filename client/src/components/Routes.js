@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import Login from './Login'
@@ -7,11 +7,11 @@ class Routes extends Component {
 
 	render() {
 		return (
-			<React.Fragment>
+			<Fragment>
 				<Switch>
 					<Route path="/" component={Login} />
 				</Switch>
-			</React.Fragment>
+			</Fragment>
 		)
 	}
 

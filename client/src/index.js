@@ -16,8 +16,6 @@ require( './config/axios' )
 // require( './config/firebase' )
 require( './config/fontawesome' )
 
-window.store = store
-
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
