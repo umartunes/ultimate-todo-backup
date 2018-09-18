@@ -31,11 +31,14 @@
     "@types/connect-mongo": "0.0.39",
     "@types/cors": "^2.8.4",
     "@types/express-session": "^1.15.11",
+    "@types/jest": "^23.3.2",
     "@types/mongodb": "^3.1.7",
     "@types/mongoose": "^5.2.13",
     "@types/node": "^10.9.4",
     "@types/passport": "^0.4.6",
     "@types/passport-facebook-token": "^0.4.33",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.1.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   }
