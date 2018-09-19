@@ -10,7 +10,7 @@
     "dev": "ts-node ./lib/server.ts",
     "tsc": "tsc",
     "nodemon": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --forceExit --coverage --verbose"
   },
   "author": "Muhammad Umar Ahmad",
   "license": "ISC",
@@ -38,6 +38,7 @@
     "@types/passport": "^0.4.6",
     "@types/passport-facebook-token": "^0.4.33",
     "jest": "^23.6.0",
+    "supertest": "^3.3.0",
     "ts-jest": "^23.1.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
